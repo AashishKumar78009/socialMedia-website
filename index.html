@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialMedia-Website</title>
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link to the ICONSCOUT css -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css"
+    />
+    <!-- link to boxicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 class="log">nokoSocial</h2>
+
+        <div class="search-bar">
+          <i class="bx bx-search"></i>
+          <input
+            type="search"
+            name="finder"
+            id="finder"
+            placeholder="Search for creaters, inspirations & projects..."
+          />
+        </div>
+
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Create</label>
+          <div class="profile-picture">
+            <img src="./images/profile-1.jpg" alt="prof-img" />
+          </div>
+        </div>
+      </div>
+      <!-- ending of the navigation bar... -->
+    </nav>
+
+    <!-- ---------------main------------------- -->
+    <main>
+      <!-- main section begins.. -->
+
+      <div class="container">
+        <!-- here we have three parts left,middle,right -->
+
+        <!-- ---------------------left---------------- -->
+        <div class="left">
+          <a href="#" class="profile">
+            <div class="profile-picture">
+              <img src="./images/profile-1.jpg" alt="profile-1" />
+            </div>
+            <div class="handle">
+              <h4>Vijay Chandra</h4>
+              <p class="text-muted">@Vijay78</p>
+            </div>
+          </a>
+
+          <!-- ======SIDEBAR WITH links======= -->
+          <div class="sidebar">
+            <a href="#" class="menu-item active">
+              <span><i class="bx bx-home"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a href="#" class="menu-item">
+              <span><i class="bx bx-compass"></i></span>
+              <h3>Explore</h3>
+            </a>
+            <a href="#" class="menu-item" id="notifications">
+              <span
+                ><i class="bx bx-bell"
+                  ><small class="notification-count">9+</small></i
+                ></span
+              >
+              <h3>Notifications</h3>
+              <!-- here we will create the pop-up window -->
+              <!-- ---------------notification popup window---------- -->
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-picture">
+                    <img src="./images/profile-2.jpg" alt="prof-2" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke Benjamin</b> Accepted your friend request
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./images/profile-3.jpg" alt="prof-3" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Namrita Jha</b> Accepted your friend request
+                    <small class="text-muted">2 hours ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./images/profile-14.jpg" alt="prof-3" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Alex </b> Commented on your post
+                    <small class="text-muted">1 days ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./images/profile-4.jpg" alt="prof-4" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke Benjamin</b> Accepted your friend request
+                    <small class="text-muted">1 week AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./images/profile-5.jpg" alt="prof-5" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Lara Singh</b> Accepted your friend request
+                    <small class="text-muted">1 month ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./images/profile-6.jpg" alt="prof-6" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Samuel Khan</b> Accepted your friend request
+                    <small class="text-muted">5 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./images/profile-7.jpg" alt="prof-7" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Sameer Sharma</b> Accepted your friend request
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+              </div>
+              <!-- ========end notification popup -->
+            </a>
+
+            <a href="#" class="menu-item" id="messages-notifications">
+              <span
+                ><i class="bx bx-envelope"
+                  ><small class="notification-count">6</small></i
+                ></span
+              >
+              <h3>Messages</h3>
+            </a>
+            <a href="#" class="menu-item">
+              <span><i class="bx bx-bookmarks"></i></span>
+              <h3>Bookmarks</h3>
+            </a>
+            <a href="#" class="menu-item">
+              <span><i class="bx bx-line-chart"></i></span>
+              <h3>Analytics</h3>
+            </a>
+            <a href="#" class="menu-item">
+              <span><i class="bx bx-palette"></i></span>
+              <h3>Theme</h3>
+            </a>
+            <a href="#" class="menu-item">
+              <span><i class="bx bx-cog"></i></span>
+              <h3>Settings</h3>
+            </a>
+          </div>
+          <!-- ==========end of sidebar=========== -->
+
+          <label for="create-post" class="btn btn-primary">Create Post</label>
+
+          <!-- end of the left div of  main section -->
+        </div>
+
+        <!-- ------------------middle------------------ -->
+        <div class="middle">
+          <!-- middle section starts -->
+          <!-- -------- stories section -------- -->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./images/profile-8.jpg" alt="prof-8" />
+              </div>
+              <p class="name">Your Story</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./images/profile-9.jpg" alt="prof-8" />
+              </div>
+              <p class="name">Karan Rathor</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./images/profile-10.jpg" alt="prof-8" />
+              </div>
+              <p class="name">Samantha Prabhu</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./images/profile-11.jpg" alt="prof-8" />
+              </div>
+              <p class="name">Jacky chan</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./images/profile-12.jpg" alt="prof-8" />
+              </div>
+              <p class="name">Siraj Verma</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./images/profile-13.jpg" alt="prof-8" />
+              </div>
+              <p class="name">Ritika Mittal</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./images/profile-14.jpg" alt="prof-8" />
+              </div>
+              <p class="name">Naman Thakur</p>
+            </div>
+            <!--+++++++++++++++ stories sections ends here +++++++++++++++ -->
+          </div>
+
+          <form action="#" class="create-post">
+            <div class="profile-picture">
+              <img src="./images/profile-1.jpg" alt="prof-1" />
+            </div>
+            <input
+              type="text"
+              placeholder="Whats's on your mind, Lewis?"
+              id="create-post"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+
+          <!-- =============== feeds section  =================== -->
+          <div class="feeds">
+            <!-- ------ feed-1 -------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./images/profile-14.jpg" alt="prof-14" />
+                  </div>
+                  <div class="info">
+                    <h3>Lana Rose</h3>
+                    <small>Dubai, 45 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-1.jpg" alt="feed-1" />
+              </div>
+
+              <div class="action-buttons">
+                <!-- here we have two classes  -->
+                <div class="interaction-buttons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-comment"></i></span>
+                  <span><i class="bx bx-share-alt"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-12.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-10.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-16.jpg" alt="prof-12" /></span>
+                <p>Liked by <b>Ernest Achiver</b> and <b>2,356 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Non, est?
+                  <span class="hash-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 565 comments</div>
+              <!-- ----- endof feed-1 ------ -->
+            </div>
+
+            <!-- ------ feed-2 -------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./images/profile-15.jpg" alt="prof-14" />
+                  </div>
+                  <div class="info">
+                    <h3>Dangerous Freddy</h3>
+                    <small>Dubai, 45 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-2.jpg" alt="feed-1" />
+              </div>
+
+              <div class="action-buttons">
+                <!-- here we have two classes  -->
+                <div class="interaction-buttons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-comment"></i></span>
+                  <span><i class="bx bx-share-alt"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-12.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-10.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-16.jpg" alt="prof-12" /></span>
+                <p>Liked by <b>Ernest Achiver</b> and <b>2,356 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Badasha Badboy</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Non, est?
+                  <span class="hash-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 565 comments</div>
+              <!-- ----- endof feed-2 ------ -->
+            </div>
+
+            <!-- ------ feed-3 -------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./images/profile-17.jpg" alt="prof-14" />
+                  </div>
+                  <div class="info">
+                    <h3>Fatima sekih</h3>
+                    <small>Dubai, 45 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-3.jpg" alt="feed-1" />
+              </div>
+
+              <div class="action-buttons">
+                <!-- here we have two classes  -->
+                <div class="interaction-buttons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-comment"></i></span>
+                  <span><i class="bx bx-share-alt"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-12.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-10.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-16.jpg" alt="prof-12" /></span>
+                <p>Liked by <b>Ernest Achiver</b> and <b>2,356 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Sabbir Saha</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Non, est?
+                  <span class="hash-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 565 comments</div>
+              <!-- ----- endof feed-3 ------ -->
+            </div>
+
+            <!-- ------ feed-4 -------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./images/profile-18.jpg" alt="prof-14" />
+                  </div>
+                  <div class="info">
+                    <h3>Lawrence James</h3>
+                    <small>Dubai, 45 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-4.jpg" alt="feed-1" />
+              </div>
+
+              <div class="action-buttons">
+                <!-- here we have two classes  -->
+                <div class="interaction-buttons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-comment"></i></span>
+                  <span><i class="bx bx-share-alt"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-12.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-10.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-16.jpg" alt="prof-12" /></span>
+                <p>Liked by <b>Ernest Achiver</b> and <b>2,356 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Angel Priya</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Non, est?
+                  <span class="hash-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 565 comments</div>
+              <!-- ----- endof feed-4 ------ -->
+            </div>
+
+            <!-- ------ feed-5 -------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./images/profile-19.jpg" alt="prof-14" />
+                  </div>
+                  <div class="info">
+                    <h3>Raktim Gupta</h3>
+                    <small>Dubai, 45 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-5.jpg" alt="feed-1" />
+              </div>
+
+              <div class="action-buttons">
+                <!-- here we have two classes  -->
+                <div class="interaction-buttons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-comment"></i></span>
+                  <span><i class="bx bx-share-alt"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-12.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-10.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-16.jpg" alt="prof-12" /></span>
+                <p>Liked by <b>Ernest Achiver</b> and <b>2,356 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Vijay Pratap</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Non, est?
+                  <span class="hash-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 565 comments</div>
+              <!-- ----- endof feed-5 ------ -->
+            </div>
+
+            <!-- ------ feed-6 -------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./images/profile-7.jpg" alt="prof-14" />
+                  </div>
+                  <div class="info">
+                    <h3>Anuman Kausal</h3>
+                    <small>Dubai, 45 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-6.jpg" alt="feed-7" />
+              </div>
+
+              <div class="action-buttons">
+                <!-- here we have two classes  -->
+                <div class="interaction-buttons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-comment"></i></span>
+                  <span><i class="bx bx-share-alt"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-12.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-10.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-16.jpg" alt="prof-12" /></span>
+                <p>Liked by <b>Ernest Achiver</b> and <b>2,356 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Kaise John</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Non, est?
+                  <span class="hash-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 565 comments</div>
+              <!-- ----- endof feed-6 ------ -->
+            </div>
+
+            <!-- ------ feed-7 -------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./images/profile-5.jpg" alt="prof-14" />
+                  </div>
+                  <div class="info">
+                    <h3>Samukta Singh</h3>
+                    <small>New York, 1 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-7.jpg" alt="feed-1" />
+              </div>
+
+              <div class="action-buttons">
+                <!-- here we have two classes  -->
+                <div class="interaction-buttons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-comment"></i></span>
+                  <span><i class="bx bx-share-alt"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-12.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-10.jpg" alt="prof-12" /></span>
+                <span><img src="./images/profile-16.jpg" alt="prof-12" /></span>
+                <p>Liked by <b>Ernest Achiver</b> and <b>2,356 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Alex God</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Non, est?
+                  <span class="hash-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 565 comments</div>
+              <!-- ----- endof feed-7 ------ -->
+            </div>
+
+            <!-- ------end of feeds section------- -->
+          </div>
+
+          <!--+++++++++++++++++++++ middle section ends here..+++++++++++++++++++ -->
+        </div>
+
+        <!-- ------------------right section begins--------------------- -->
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4>
+              <i class="bx bx-edit"></i>
+            </div>
+            <!-------------search bar -------------- -->
+            <div class="search-bar">
+              <i class="bx bx-search"></i>
+              <input
+                type="search"
+                name="finder"
+                id="message-search"
+                placeholder="Search messages"
+              />
+            </div>
+            <!-- --------- message categories -------------- -->
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Requests(11)</h6>
+            </div>
+            <!-- ------------ message ----------------------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./images/profile-19.jpg" alt="prof-19" />
+              </div>
+              <div class="message-body">
+                <h5>Edem Quist</h5>
+                <p class="text-muted">Just woke up bro</p>
+              </div>
+            </div>
+            <!-- ------------ message ----------------------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./images/profile-2.jpg" alt="prof-19" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Daniella Jackson</h5>
+                <p class="text-bold">2 new Messages</p>
+              </div>
+            </div>
+            <!-- ------------ message ----------------------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./images/profile-5.jpg" alt="prof-5" />
+              </div>
+              <div class="message-body">
+                <h5>Edem Quist</h5>
+                <p class="text-bold">Party all night!</p>
+              </div>
+            </div>
+            <!-- ------------ message ----------------------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./images/profile-13.jpg" alt="prof-13" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Lucky Ramaen</h5>
+                <p class="text-muted">lol u right</p>
+              </div>
+            </div>
+            <!-- ------------ message ----------------------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./images/profile-14.jpg" alt="prof-14" />
+              </div>
+              <div class="message-body">
+                <h5>Mahesh Babu</h5>
+                <p class="text-muted">Awesome party...</p>
+              </div>
+            </div>
+            <!-- ------------ message ----------------------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./images/profile-10.jpg" alt="prof-2" />
+              </div>
+              <div class="message-body">
+                <h5>Mariya James</h5>
+                <p class="text-muted">Block-buster Flop!</p>
+              </div>
+            </div>
+            <!-- ------------ message ----------------------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./images/profile-9.jpg" alt="prof-19" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Chantel Misza</h5>
+                <p class="text-bold">Birthday Tommorow!</p>
+              </div>
+            </div>
+            <!--============ end of messges============ -->
+          </div>
+
+          <!-- =============FRIEND REQUESTS============= -->
+          <div class="friend-requests">
+            <h4>Requests</h4>
+
+            <!-- request-1  -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="./images/profile-11.jpg" alt="prof-11" />
+                </div>
+                <div>
+                  <h5>Harman Joshi</h5>
+                  <p class="text-muted">9 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+              <!-- request-1 ends -->
+            </div>
+
+            <!-- request-2  starts -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="./images/profile-17.jpg" alt="prof-11" />
+                </div>
+                <div>
+                  <h5>Samukta Singh</h5>
+                  <p class="text-muted">2 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!-- request-3  -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="./images/profile-5.jpg" alt="prof-11" />
+                </div>
+                <div>
+                  <h5>Karuna Irani</h5>
+                  <p class="text-muted">10 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+              <!-- request 3 ends -->
+            </div>
+
+            <!-- request-4  -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="./images/profile-13.jpg" alt="prof-11" />
+                </div>
+                <div>
+                  <h5>Alfred Nobel</h5>
+                  <p class="text-muted">99 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+              <!-- request-4 ends -->
+            </div>
+            <!-- friend request section ends -->
+          </div>
+          <!-- right section ends here -->
+        </div>
+      </div>
+      <!-- main section ends.. -->
+    </main>
+
+
+
+ <!-- ======================== THEME CUSTOMIZATION +++++++++++++++++++++++++ -->
+
+ <div class="customize-theme">
+    <div class="card">
+        <h2>Customize your view</h2>
+        <p class="text-muted">Manage your font size, color, and background.</p>
+
+        <!-- FONT SIZES -->
+       <div class="font-size">
+         <h4>Font Size</h4>
+         <div>
+           <h6>Aa</h6>
+           <div class="choose-size">
+              <span class="font-size-1"></span>
+              <span class="font-size-2 active"></span>
+              <span class="font-size-3"></span>
+              <span class="font-size-4"></span>
+              <span class="font-size-5"></span>
+           </div>
+           <h3>Aa</h3>
+         </div>
+       </div>
+
+
+       <!-- -------- primary colors -------------- -->
+       <div class="color">
+        <h4>color</h4>
+        <div class="choose-color">
+          <span class="color-1 active"></span>
+          <span class="color-2"></span>
+          <span class="color-3"></span>
+          <span class="color-4"></span>
+          <span class="color-5"></span>
+        </div>
+       </div>
+
+       
+       <!-- ===========background colors============  -->
+       <div class="background">
+        <h4>Background</h4>
+        <div class="choose-bg">
+          
+          <div class="bg-1 active">
+            <span></span>
+            <h5 for="bg-1">Light</h5>
+          </div>
+          
+          <div class="bg-2">
+            <span></span>
+            <h5 for="bg-2">Dim</h5>
+          </div>
+          
+          <div class="bg-3">
+            <span></span>
+            <h5 for="bg-3">Lights Out</h5>
+          </div>
+
+        </div>
+       </div>
+
+
+    </div>
+    <!-- ==== theme customization ends ==== -->
+ </div>
+
+
+
+
+
+
+
+    <!-- link to the javaScript file... -->
+    <script src="script.js"></script>
+  </body>
+</html>
