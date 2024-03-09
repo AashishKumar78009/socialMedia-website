@@ -19,6 +19,7 @@ menuItem.forEach(item =>{
       document.querySelector('.notification-popup').style.display = 'none';
     }else{
       document.querySelector('.notification-popup').style.display = 'block';
+      document.querySelector('#notifications .notification-count').style.display = 'none';
     }
   })
 })
